@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Introduction to Matplotlib (tutorial) &#8212; introPy</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
@@ -26,7 +27,7 @@
 
     
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -44,9 +45,7 @@
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -94,7 +93,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Getting started
  </span>
@@ -116,7 +115,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Python (week 1)
  </span>
@@ -163,7 +162,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   PsychoPy (week 2)
  </span>
@@ -215,7 +214,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Misc
  </span>
@@ -258,21 +257,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -290,7 +289,7 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -311,13 +310,13 @@
 </div>
 
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -342,13 +341,14 @@
     </div>
 </div>
 
-    </div>
+        </div>
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
         <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
+            <i class="fas fa-list"></i>
+            Contents
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
@@ -383,6 +383,7 @@
 
         </nav>
         
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -390,10 +391,10 @@
         
               <div>
                 
-  <div class="section" id="introduction-to-matplotlib-tutorial">
+  <section id="introduction-to-matplotlib-tutorial">
 <h1>Introduction to Matplotlib (tutorial)<a class="headerlink" href="#introduction-to-matplotlib-tutorial" title="Permalink to this headline">¶</a></h1>
 <p>This notebook gives a short introduction to <em>Matplotlib</em>, Python’s most popular package for plotting. Although many different plotting packages exist in the Python ecosystem (see <a class="reference external" href="https://www.youtube.com/watch?v=FytuB8nFHPQ">this talk</a> for an overview), Matplotlib is arguably the most versatile and flexible. Here, we will give you a short tour of Matplotlib’s most important features.</p>
-<div class="section" id="contents">
+<section id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>The state-based approach</p></li>
@@ -409,8 +410,8 @@
 </div>
 </div>
 <p>Somewhat confusingly, Matplotlib has two interfaces for plotting: a state-based approach that mimicks Matlab’s way of plotting and a more “Pythonic” object-oriented approach. As Matplotlib recommends using the object-oriented approach, we will spend most time on this approach. But you’ll often see the state-based approach as well, so we’ll start with quickly discussing this approach.</p>
-</div>
-<div class="section" id="the-state-based-approach">
+</section>
+<section id="the-state-based-approach">
 <h2>The state-based approach<a class="headerlink" href="#the-state-based-approach" title="Permalink to this headline">¶</a></h2>
 <p>As mentioned, the state-based approach is a lot like the way plotting is done in Matlab: you call different <em>functions</em> that each take care of an aspect of the plot. In Matplotlib, most of these functions are contained in the <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> package. Let’s create simple line plot to show how the state-based approach looks like:</p>
 <div class="cell docutils container">
@@ -589,7 +590,7 @@
 <img alt="../../_images/2_matplotlib_22_0.png" src="../../_images/2_matplotlib_22_0.png" />
 </div>
 </div>
-<div class="section" id="different-plot-functions">
+<section id="different-plot-functions">
 <h3>Different plot functions<a class="headerlink" href="#different-plot-functions" title="Permalink to this headline">¶</a></h3>
 <p>Of course, <code class="docutils literal notranslate"><span class="pre">plt.plot</span></code> is not the only plotting functions! There are many different plotting functions in Matplotlib, including scatterplots:</p>
 <div class="cell docutils container">
@@ -704,9 +705,9 @@
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="the-object-oriented-interface">
+</section>
+</section>
+<section id="the-object-oriented-interface">
 <h2>The object-oriented interface<a class="headerlink" href="#the-object-oriented-interface" title="Permalink to this headline">¶</a></h2>
 <p>The state-based plotting approach is easy to learn and pretty straightforward, but when you start creating more complex visualizations, you’ll notice that the alternative “object-oriented” approach becomes easier to use. In this section, we will explain this approach by recreating some of the previous plots from the state-based section. We will also discuss some more advanced plotting techniques, such as creating subplots.</p>
 <p>Now, within the object-oriented approach, we can explain some of the more technical (but important!) concepts. One of those is that each Matplotlib plot consists of a <code class="docutils literal notranslate"><span class="pre">Figure</span></code> object and one or more <code class="docutils literal notranslate"><span class="pre">Axes</span></code> objects. Essentially, the <code class="docutils literal notranslate"><span class="pre">Figure</span></code> object represents the entire canvas that defines the, well, figure. The <code class="docutils literal notranslate"><span class="pre">Axes</span></code> object(s) contains the actual visualizations that you want to include in the <code class="docutils literal notranslate"><span class="pre">Figure</span></code> (see figure below). Importantly, there may be one <em>or</em> multiple <code class="docutils literal notranslate"><span class="pre">Axes</span></code> object within a given <code class="docutils literal notranslate"><span class="pre">Figure</span></code> (e.g., two line plots next to each other).</p>
@@ -889,8 +890,8 @@
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="subplots-optional">
+</section>
+<section id="subplots-optional">
 <h2>Subplots (optional)<a class="headerlink" href="#subplots-optional" title="Permalink to this headline">¶</a></h2>
 <p>In this optional section, we will discuss figures with “subplots”, i.e., figures with more than one <code class="docutils literal notranslate"><span class="pre">Axes</span></code> object! The easiest way to do this is to use the <code class="docutils literal notranslate"><span class="pre">plt.subplots</span></code> function. This function accepts the arguments <code class="docutils literal notranslate"><span class="pre">ncols</span></code> and <code class="docutils literal notranslate"><span class="pre">nrows</span></code> to create a figure with multiple <code class="docutils literal notranslate"><span class="pre">Axes</span></code> next to each other (<code class="docutils literal notranslate"><span class="pre">ncols</span></code> &gt; 1) or below each other (<code class="docutils literal notranslate"><span class="pre">nrows</span></code> &gt; 1). For example, suppose that I want to create a figure with three plots next to each other:</p>
 <div class="cell docutils container">
@@ -1099,8 +1100,8 @@
 <img alt="../../_images/2_matplotlib_82_0.png" src="../../_images/2_matplotlib_82_0.png" />
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1124,15 +1125,15 @@
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="1_python_basics.html" title="previous page">Python basics (tutorial)</a>
     <a class='right-next' id="next-link" href="3_pandas.html" title="next page">Introduction to Pandas (tutorial)</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Python basics (tutorial) &#8212; introPy</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
@@ -26,7 +27,7 @@
 
     
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -44,9 +45,7 @@
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -94,7 +93,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Getting started
  </span>
@@ -116,7 +115,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Python (week 1)
  </span>
@@ -163,7 +162,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   PsychoPy (week 2)
  </span>
@@ -215,7 +214,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Misc
  </span>
@@ -258,21 +257,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -290,7 +289,7 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -311,13 +310,13 @@
 </div>
 
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -342,13 +341,14 @@
     </div>
 </div>
 
-    </div>
+        </div>
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
         <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
+            <i class="fas fa-list"></i>
+            Contents
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
@@ -467,6 +467,7 @@
 
         </nav>
         
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -474,10 +475,10 @@
         
               <div>
                 
-  <div class="section" id="python-basics-tutorial">
+  <section id="python-basics-tutorial">
 <h1>Python basics (tutorial)<a class="headerlink" href="#python-basics-tutorial" title="Permalink to this headline">¶</a></h1>
 <p>This notebook will provide short tutorial on basic Python concepts and syntax. We will go over the Python package system and imports, data types, functions, conditionals, and loops.</p>
-<div class="section" id="contents">
+<section id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>The Python ecosystem, imports, and whitespace</p></li>
@@ -487,8 +488,8 @@
 <li><p>Loops</p></li>
 </ol>
 <p><strong>Estimated time to complete</strong>: 2-4 hours</p>
-</div>
-<div class="section" id="the-python-ecosystem">
+</section>
+<section id="the-python-ecosystem">
 <h2>The Python ecosystem<a class="headerlink" href="#the-python-ecosystem" title="Permalink to this headline">¶</a></h2>
 <p>Python is a multipurpose programming language, meaning it can be used for almost anything. While the “standard library” of Python (i.e., the functionality that is shipped with any Python installation) contains the bare minimum for any programming language, Python’s versatility comes from a massive community of developers that created many different “third-party” packages for almost any purpose you can think of (e.g., visualization, machine learning, game programming, etc.).</p>
 <p>For example:</p>
@@ -500,8 +501,8 @@
 <li><p>and various specialied neuroimaging packages provide functionality to work and analyze (f)MRI (e.g. <a class="reference external" href="http://nipy.org/nibabel/">nibabel</a> and <a class="reference external" href="http://nipy.org/nipype">nipype</a>) and MEG/EEG (e.g. <a class="reference external" href="http://www.martinos.org/mne/stable/index.html">MNE</a>).</p></li>
 </ul>
 <p>Basically, there are packages for everything you can think of! In this course, we will mostly use basic Python in combination with the scientific computing packages (<em>pandas</em>, <em>numpy</em>, and <em>matplotlib</em>).</p>
-</div>
-<div class="section" id="import-statements">
+</section>
+<section id="import-statements">
 <h2>Import statements<a class="headerlink" href="#import-statements" title="Permalink to this headline">¶</a></h2>
 <p>As explained above, Python ships with some default functionality. This means that it’s already available upon starting a notebook (or any other Python environment) and doesn’t need to be imported. An example is the function <code class="docutils literal notranslate"><span class="pre">len()</span></code>.</p>
 <div class="cell docutils container">
@@ -678,8 +679,8 @@
 </div>
 <div class="alert alert-success">
 <b>Wildcard imports.</b> Python allows also "wildcard" imports, like: <tt>from numpy import *</tt>, which says: import <em>everything</em> from the <tt>numpy</tt> package. This is often discouraged, because the beauty of having explicit imports (unlike MATLAB) is that you known where your functions come from (e.g., is it a base Python function or a numpy function?). 
-</div></div>
-<div class="section" id="whitespace-for-indentation">
+</div></section>
+<section id="whitespace-for-indentation">
 <h2>Whitespace for indentation<a class="headerlink" href="#whitespace-for-indentation" title="Permalink to this headline">¶</a></h2>
 <p>In most programming languages, code blocks (e.g., if-else blocks, or for-loops) are delineated by dedicated symbols (often curly brackets, <code class="docutils literal notranslate"><span class="pre">{}</span></code>). For example, an if-else block in R may be written like this:</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">if </span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
@@ -716,11 +717,11 @@
 </div>
 <div class="alert alert-warning">
 <b>ToDo</b>: Fix the code block above by identing it correctly. (No test cell.)
-</div></div>
-<div class="section" id="basic-data-types">
+</div></section>
+<section id="basic-data-types">
 <h2>Basic data types<a class="headerlink" href="#basic-data-types" title="Permalink to this headline">¶</a></h2>
 <p>Base (i.e., built-in) Python has mostly the same data types as you might know from MATLAB or R, such as numbers (integers/floats), strings, and lists (cells in MATLAB; lists in R). Also, Python has to data types that might be unknown to MATLAB/R users, such as “dictionaries” and “tuples”, which are explained later.</p>
-<div class="section" id="numbers">
+<section id="numbers">
 <h3>Numbers<a class="headerlink" href="#numbers" title="Permalink to this headline">¶</a></h3>
 <p>Numbers are represented either as integers (“whole” numbers) or floats (numbers with decimals, basically).</p>
 <div class="cell docutils container">
@@ -834,8 +835,8 @@ Well done! 2 out of tests 2 passed
 <div class='alert alert-success' style='padding-bottom:10px'>
     <b>Tip!</b>
     When you're working on your ToDo, it's often informative to print (intermediate) output/variables of your solution (in a new code cell for example). This might give insight into (potentially) failing tests! 
-</div></div>
-<div class="section" id="booleans">
+</div></section>
+<section id="booleans">
 <h3>Booleans<a class="headerlink" href="#booleans" title="Permalink to this headline">¶</a></h3>
 <p>Python implements all of the usual operators for comparisons. Similar to what you might know from other languages, <code class="docutils literal notranslate"><span class="pre">==</span></code> tests equivalence, <code class="docutils literal notranslate"><span class="pre">!=</span></code> for not equivalent, and <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> for larger/smaller than. The result of those comparisons are a datatype called a “boolean”, representing truth values. Booleans can take on the value <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <p>Check out some examples below:</p>
@@ -904,8 +905,8 @@ True
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="strings">
+</section>
+<section id="strings">
 <h3>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h3>
 <p>Strings in Python are largely the same as in other languages.</p>
 <div class="cell docutils container">
@@ -980,9 +981,8 @@ so I&#39;ll stop here.
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Before formatting:
 My favorite programming language is: %s
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>After formatting:
+
+After formatting:
 My favorite programming language is: Python
 </pre></div>
 </div>
@@ -1079,8 +1079,8 @@ In week 1 of the course, I will get a 95.000000 (or higher) on my quiz!
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="lists">
+</section>
+<section id="lists">
 <h3>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h3>
 <p>A list is the Python equivalent of an “array”, but can be resized and can contain elements of different types. It is similar to a list in R and a cell in MATLAB. Note that indices in python start with 0! This means that the 3rd element of the list below is accessed through <code class="docutils literal notranslate"><span class="pre">[2]</span></code>.</p>
 <p>Let’s check out some lists and how to index them!</p>
@@ -1457,8 +1457,8 @@ The second-to-last element of list3 is: 5.300000
 </div>
 </div>
 <p>We’ll practice with using (<code class="docutils literal notranslate"><span class="pre">not</span></code>) <code class="docutils literal notranslate"><span class="pre">in</span></code> later!</p>
-</div>
-<div class="section" id="dictionaries">
+</section>
+<section id="dictionaries">
 <h3>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h3>
 <p>Dictionaries might be new for those who are used to MATLAB or R. Basically, a dictionary is an <em>unordered</em> list in which list entries have a name (which is also referred to as a “key”). To get a value from a dictionary, you have to use the “key” as index instead of using an integer (although, strictly speaking, keys can also be integers … but that’s not important for now).</p>
 <p>Let’s check out such a dictionary and how to index it. We build a dictionary using the following syntax:</p>
@@ -1567,9 +1567,6 @@ The second-to-last element of list3 is: 5.300000
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Well done!
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
 </div>
 </div>
 <div class='alert alert-warning' style='padding-bottom:10px'>
@@ -1615,8 +1612,8 @@ The second-to-last element of list3 is: 5.300000
     <b>Tip</b>: Instead of using curly braces, you can also initialize dictionaries explicitly using the <tt>dict</tt> class:<br>
     <tt>some_dict = dict(key1='value1', key2='value2')</tt><br>
     Note, though, you have to use string-like keys in this approach (unlike the curly brace approach).
-</div></div>
-<div class="section" id="tuples">
+</div></section>
+<section id="tuples">
 <h3>Tuples<a class="headerlink" href="#tuples" title="Permalink to this headline">¶</a></h3>
 <p>Tuples are very much like lists, but the main difference is that they are immutable. In other words, after creating them, they cannot be modified (their values cannot be replaced/altered):</p>
 <div class="cell docutils container">
@@ -1679,11 +1676,11 @@ The second-to-last element of list3 is: 5.300000
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="functions-and-methods">
+</section>
+</section>
+<section id="functions-and-methods">
 <h2>Functions and methods<a class="headerlink" href="#functions-and-methods" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="functions">
+<section id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <p>Like any programming language, Python allows you to create your own custom functions. Writing your own functions is useful when, for example, you want to do a particular computation/task many times. Then, if you need to change the computation or task, you only have to change the function instead of manually editing your code every time you do the computation/task. If you’re familiar with other programming languages, you’ll see that the syntax of Python functions is quite similar to what you’re used to.</p>
 <p>A function definition in Python starts with the keyword <code class="docutils literal notranslate"><span class="pre">def</span></code>, followed by the function name and round brackets with the arguments to the function, and finally the contents of the function, like so (note the indentation with four spaces/tab!):</p>
@@ -2027,8 +2024,8 @@ Maximum: 3
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="methods">
+</section>
+<section id="methods">
 <h3>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h3>
 <p>In Python, functions are not the only things that allow you to ‘do’ things with data. As you’ve seen in the previous notebook, there are also methods! Different types of objects in Python, such as stings and lists, have their own set of methods. For example, the function you defined above (<code class="docutils literal notranslate"><span class="pre">extract_last_element()</span></code>) also exists as a method each list has, called <code class="docutils literal notranslate"><span class="pre">pop()</span></code>! (This is a builtin, standard, method that each list in Python has.) See for yourself in the block below.</p>
 <div class="cell docutils container">
@@ -2182,8 +2179,8 @@ Python is awesome!
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="default-arguments-in-functions-methods">
+</section>
+<section id="default-arguments-in-functions-methods">
 <h3>Default arguments in functions/methods<a class="headerlink" href="#default-arguments-in-functions-methods" title="Permalink to this headline">¶</a></h3>
 <p>Importantly, and unlike most (scientific) programming languages, Python supports the use of ‘default’ arguments in functions. Basically, if you don’t specify an optional argument, it uses the default:</p>
 <div class="cell docutils container">
@@ -2205,9 +2202,9 @@ Python is awesome!
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="conditionals-if-statements">
+</section>
+</section>
+<section id="conditionals-if-statements">
 <h2>Conditionals (if-statements)<a class="headerlink" href="#conditionals-if-statements" title="Permalink to this headline">¶</a></h2>
 <p>Conditionals, or “if-statements”, are quite straightforward. There are used in combination with booleans (<code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> values) to run code conditionally. An example:
 An example:</p>
@@ -2279,11 +2276,11 @@ JUF!
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="loops">
+</section>
+<section id="loops">
 <h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
 <p>Loops in Python (for- and while-loops) are largely similar to MATLAB and R loops, with some minor differences in  their syntax. Again, just like in conditionals, indentation is important: each line within your loop needs to be consistently indented. Also, loops do not contain a keyword (like <code class="docutils literal notranslate"><span class="pre">end</span></code> in Matlab) or bracket (like a curly bracket in <em>R</em>) that determines the end of the loop; this is just determined by the indentation.</p>
-<div class="section" id="for-loops">
+<section id="for-loops">
 <h3>For loops<a class="headerlink" href="#for-loops" title="Permalink to this headline">¶</a></h3>
 <p>For loops are constructs that allow to loop over a predetermined number of elements within an object. Below, you can see an example of a for loop over a list of strings:</p>
 <div class="cell docutils container">
@@ -2321,9 +2318,9 @@ monkey
 </div>
 </div>
 <p>MATLAB users might be used to looping over indices instead of the actual list values, like the following:</p>
-<div class="highlight-Matlab notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="nb">i</span><span class="p">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">100</span>
-    <span class="nb">disp</span><span class="p">(</span><span class="n">some_list</span><span class="p">(</span><span class="nb">i</span><span class="p">));</span>
-<span class="n">end</span>
+<div class="highlight-Matlab notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="nb">i</span><span class="p">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">100</span><span class="w"></span>
+<span class="w">    </span><span class="nb">disp</span><span class="p">(</span><span class="n">some_list</span><span class="p">(</span><span class="nb">i</span><span class="p">));</span><span class="w"></span>
+<span class="k">end</span><span class="w"></span>
 </pre></div>
 </div>
 <p>In Python, however, you loop (by default) over the contents of a list:</p>
@@ -2508,8 +2505,8 @@ c 3
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="while-loops">
+</section>
+<section id="while-loops">
 <h3>While loops<a class="headerlink" href="#while-loops" title="Permalink to this headline">¶</a></h3>
 <p>While loops are constructs that allow you to do something until a specific condition is met and are often used when you do not know the number of elements you want to loop over beforehand. For example, suppose we simulate a six-sided die roll using the <code class="docutils literal notranslate"><span class="pre">randint</span></code> (“random integer”) function. We can use a while loop to keep “rolling” the die until we roll a six (i.e., the condition):</p>
 <div class="cell docutils container">
@@ -2531,7 +2528,9 @@ c 3
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>It took 0 to roll a six!
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Still haven&#39;t rolled a 6 ...
+Still haven&#39;t rolled a 6 ...
+It took 2 to roll a six!
 </pre></div>
 </div>
 </div>
@@ -2551,7 +2550,9 @@ c 3
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Still haven&#39;t rolled a 6 ...
-Still haven&#39;t rolled a 6 ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Still haven&#39;t rolled a 6 ...
 Still haven&#39;t rolled a 6 ...
 Takes too long! Breaking out ...
 </pre></div>
@@ -2577,9 +2578,23 @@ Takes too long! Breaking out ...
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Still haven&#39;t rolled a 6 ...
 Still haven&#39;t rolled a 6 ...
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Still haven&#39;t rolled a 6 ...
 Still haven&#39;t rolled a 6 ...
 Still haven&#39;t rolled a 6 ...
-It took 4 to roll a six!
+Still haven&#39;t rolled a 6 ...
+Still haven&#39;t rolled a 6 ...
+Still haven&#39;t rolled a 6 ...
+Still haven&#39;t rolled a 6 ...
+Still haven&#39;t rolled a 6 ...
+Still haven&#39;t rolled a 6 ...
+Still haven&#39;t rolled a 6 ...
+Still haven&#39;t rolled a 6 ...
+Still haven&#39;t rolled a 6 ...
+Still haven&#39;t rolled a 6 ...
+Still haven&#39;t rolled a 6 ...
+It took 16 to roll a six!
 </pre></div>
 </div>
 </div>
@@ -2611,15 +2626,15 @@ It took 4 to roll a six!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ASKZZ
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>AOQEZ
 </pre></div>
 </div>
 </div>
 </div>
 <div class='alert alert-danger' style='padding-bottom:10px'>
     <b>Warning</b>: Sometimes, you might run an infinite loop without a way to "break out" of it. When doing so in a (non-interactive) Python script, you can simply press control + C on your keyboard to interrupt the script, but in Jupyter notebooks, this doesn't work. Instead, you need to click on the "stop" button (next to the "run" button) to interrupt the cell! If even that doesn't work, you need to stop the entire kernel: <em>Kernel</em> &rarr; <em>Restart Kernel</em> (or <em>Shut Down Kernel</em>). 
-</div></div>
-<div class="section" id="advanced-for-loops-list-comprehensions-optional">
+</div></section>
+<section id="advanced-for-loops-list-comprehensions-optional">
 <h3>Advanced for loops: list comprehensions (optional)<a class="headerlink" href="#advanced-for-loops-list-comprehensions-optional" title="Permalink to this headline">¶</a></h3>
 <p>Sometimes, writing (and reading!) for-loops can be confusing and lead to “ugly” code. Wouldn’t it be nice to represent (small) for-loops on a single line? Python has a way to do this: using what is called <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehensions</span></code>. It does exactly the same thing as a for-loop: it takes a list, iterates over its entries (and does something with each entry), and (optionally) returns a (modified) list.</p>
 <p>Let’s look at an arbitrary example of a for-loop over a list:</p>
@@ -2723,9 +2738,9 @@ It took 4 to roll a six!
 </div>
 </div>
 <p>List and dictionary comprehensions are more advanced Python concepts, so if you don’t feel comfortable using them (correctly) in your future assignments, use regular for-loops by all means!</p>
-</div>
-</div>
-<div class="section" id="a-challenging-exercise-optional">
+</section>
+</section>
+<section id="a-challenging-exercise-optional">
 <h2>A challenging exercise (optional)<a class="headerlink" href="#a-challenging-exercise-optional" title="Permalink to this headline">¶</a></h2>
 <p>For those that a challenge, try the following (very) difficult ToDo!</p>
 <div class='alert alert-warning' style='padding-bottom:10px'>
@@ -2825,8 +2840,8 @@ It took 4 to roll a six!
 </div>
 <p>Alright! That was it for this tutorial. We discussed the most important syntax, data types, and constructs in Python. Sure, there are things that we haven’t discussed (e.g., <a class="reference external" href="https://realpython.com/python-sets/">sets</a>, <a class="reference external" href="https://realpython.com/introduction-to-python-generators/">generators</a>, <a class="reference external" href="https://realpython.com/inheritance-composition-python/">inheritance</a>, <a class="reference external" href="https://realpython.com/primer-on-python-decorators/">decorators</a> and so on), but the material from this tutorial should be enough to get you started with Python (and the next tutorials)!</p>
 <p>You can continue with the next one about <em>Matplotlib</em> if you’re ready!</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -2850,15 +2865,15 @@ It took 4 to roll a six!
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="0_introduction.html" title="previous page">Introduction to Python (tutorial)</a>
     <a class='right-next' id="next-link" href="2_matplotlib.html" title="next page">Introduction to Matplotlib (tutorial)</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">

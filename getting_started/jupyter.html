@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>The Jupyter ecosystem &#8212; introPy</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
@@ -26,7 +27,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -44,9 +45,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -94,7 +93,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Getting started
  </span>
@@ -116,7 +115,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Python (week 1)
  </span>
@@ -163,7 +162,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   PsychoPy (week 2)
  </span>
@@ -215,7 +214,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Misc
  </span>
@@ -258,21 +257,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -290,7 +289,7 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -311,21 +310,22 @@
 </div>
 
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
-    </div>
+        </div>
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
         <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
+            <i class="fas fa-list"></i>
+            Contents
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
@@ -348,6 +348,7 @@
 
         </nav>
         
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -355,19 +356,18 @@
         
               <div>
                 
-  <div class="section" id="the-jupyter-ecosystem">
+  <section id="the-jupyter-ecosystem">
 <h1>The Jupyter ecosystem<a class="headerlink" href="#the-jupyter-ecosystem" title="Permalink to this headline">¶</a></h1>
-<p>In this course, we will use several tools from <em>project Jupyter</em> <a class="bibtex reference internal" href="../misc/bibliography.html#kluyver2016jupyter" id="id1">[KRKPerez+16]</a>. This project includes several nifty tools to make programming a little easier!</p>
-<div class="section" id="jupyterhub">
+<p>In this course, we will use several tools from <em>project Jupyter</em> <a href="#id1"><span class="problematic" id="id2">:cite:`kluyver2016jupyter`</span></a>. This project includes several nifty tools to make programming a little easier!</p>
+<section id="jupyterhub">
 <h2>JupyterHub<a class="headerlink" href="#jupyterhub" title="Permalink to this headline">¶</a></h2>
 <p>One tool that we use in this course is “JupyterHub”. This piece of software allows you to easily create a preconfigured Python environment on an external server — no need to install Python on your own computer anymore! You just go to the website/public IP associated with the external server and you can start programming! We run JupyterHub on our own server at the University of Amsterdam, which Research Master students can use for this course. Others may use the aforementioned tool “Binder” to create a JupyterHub instance themselves, which can be used for this course as well!</p>
-</div>
-<div class="section" id="jupyter-interfaces-classic-vs-jupyterlab">
+</section>
+<section id="jupyter-interfaces-classic-vs-jupyterlab">
 <h2>Jupyter interfaces: classic vs. JupyterLab<a class="headerlink" href="#jupyter-interfaces-classic-vs-jupyterlab" title="Permalink to this headline">¶</a></h2>
 <p>The Jupyter environment offers two interfaces: the <em>classic</em> interface and the more extensive <em>JupyterLab</em> interface. On our own JupyterHub instance, we enabled the classic interface by default, because the <a class="reference external" href="https://nbgrader.readthedocs.io/">grading software</a> we use only works with this interface. On Binder, the classic notebook is the default interface, as well.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Both the classic interface and the JupyterLab interface are shipped with the Anaconda distribution, so no need to install them manually! If you, for whatever reason, <em>do</em> need to install them, you can do so using <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
+<p>::::{note}
+Both the classic interface and the JupyterLab interface are shipped with the Anaconda distribution, so no need to install them manually! If you, for whatever reason, <em>do</em> need to install them, you can do so using <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="p">{</span><span class="n">package</span><span class="o">-</span><span class="n">name</span><span class="p">}</span>
 </pre></div>
 </div>
@@ -380,16 +380,16 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">lab</span>
 </pre></div>
 </div>
-<p>These command will open a (new) tab in your default browser with the Jupyter interface. Note that, to stop the interface on your own computer, you need to stop the terminal process you started by typing Control (or Command) + C (or simply closing the terminal).</p>
-</div>
+<p>These command will open a (new) tab in your default browser with the Jupyter interface. Note that, to stop the interface on your own computer, you need to stop the terminal process you started by typing Control (or Command) + C (or simply closing the terminal).
+::::</p>
 <p>Both interfaces allow you to write, edit, and run code. Note that this is not limited to Python code! By installing different <a class="reference external" href="https://jupyter.readthedocs.io/en/latest/projects/kernels.html">kernels</a>, you can run programs written in many different programming languages, including R, <a class="reference external" href="https://julialang.org/">Julia</a>, and even Matlab. In fact, the name “Jupyter” is a reference to the three core programming languages supported by Jupyter: Julia, Python, and R.</p>
 <p>In the Jupyter environment, code can be written and executed in different ways, which can be roughly divided into “script-based” and “interactive” approaches. In the script-based approach, you write your Python code in plain-text Python files (i.e., files with the extension <code class="docutils literal notranslate"><span class="pre">.py</span></code>) and run them, as a whole, in the terminal. In the interactive approach, you can write and run code interactively in either a Python <em>console</em> (or <em>shell</em>) or in a <em>Jupyter notebook</em>. The Jupyter notebook is the most common format for interactive computing and we will use it heavily in week 1 of this course. The next sections explains Jupyter Notebooks in more detail.</p>
 <p>For now, if you want to quickly explore the Jupyter environment, you can click one of the two buttons below, which will access JupyterHub instance (with a classic interface) that includes the course materials. The UvA JupyterHub (orange button) is only accessible to Research Master Students enrolled in the “Programming for Psychology” course; instructions on how to log in onto the UvA JupyterHub can be found on Canvas. The Binder JupyterHub (blue button) can be used by anyone.</p>
 <p><a class="reference external" href="https://neuroimaging.lukas-snoek.com"><img alt="UvA" src="https://badgen.net/badge/UvA/Jupyterhub/orange" /></a>
 <a class="reference external" href="https://mybinder.org/v2/gh/lukassnoek/introPy/master?urlpath=lab"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
 <p>Note that, instead of using the classic interface, you can launch the JupyterLab interface by replacing the <code class="docutils literal notranslate"><span class="pre">/tree</span></code> snippet in the URL to <code class="docutils literal notranslate"><span class="pre">/lab</span></code>. To change it back to the classic interface again, click on <em>Help</em> → <em>Launch Classic Notebook</em> or change the <code class="docutils literal notranslate"><span class="pre">/lab</span></code> snippet back to <code class="docutils literal notranslate"><span class="pre">/tree</span></code> in the URL.</p>
-</div>
-<div class="section" id="jupyter-notebooks">
+</section>
+<section id="jupyter-notebooks">
 <h2>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h2>
 <p>As mentioned, we use “Jupyter Notebooks” a lot in this course. Jupyter notebooks are very similar to R Markdown files. Like R Markdown files, you can mix text, code, plots, and mathematical formulas within a single document (see gif below).</p>
 <p><img alt="jupyter_gif" src="https://miro.medium.com/max/2380/1*Y0wfx6EBWAGo_gfmUZHJLw.gif" />
@@ -397,8 +397,8 @@
 <p>Most of our tutorials are actually written in Jupyter notebooks. These notebooks are great for “interactive programming”, in which it is easy to experiment, try out, and troubleshoot your code. Because this mode of programming is great for teaching, we will use Jupyter notebooks a lot in week 1. Interactive programing is not, however, the only way in which you use Python. In fact, a lot of people use Python in a non-interactive way by writing scripts. In this “script mode” (for lack of a better term), writing the code and running the code are done separately. The code interface of PsychoPy (discussed in week 2), for example, cannot be used interactively and only supports “script mode”. We will dicuss both modes in this course.</p>
 <p>If you want to check out Jupyter notebooks already, open a Jupyter interface (using Binder, the UvA JupyterHub, or on your own computer) and, in the upper right corner, click on <em>New</em> → <em>Python 3</em> (in the classic interface) or click on the Python 3 tile in the launcher tab (in the JupyterLab interface).</p>
 <p>Now, you should be ready to start on the <a class="reference internal" href="../week_1/python.html"><span class="doc std std-doc">course materials from week 1</span></a>.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -422,15 +422,15 @@
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="installation.html" title="previous page">Installation</a>
     <a class='right-next' id="next-link" href="../week_1/python.html" title="next page">Python essentials</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
